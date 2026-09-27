@@ -1,0 +1,1406 @@
+[
+  {
+    "slug": "bessy-residence",
+    "name": "Bessy Residence",
+    "order": 1,
+    "cover": {
+      "src": "/projects/bessy-residence/01.webp",
+      "width": 1679,
+      "height": 937,
+      "group": "Renders",
+      "category": "render",
+      "isPortrait": false
+    },
+    "groups": [
+      "Renders"
+    ],
+    "images": [
+      {
+        "src": "/projects/bessy-residence/01.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/bessy-residence/02.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/bessy-residence/03.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/bessy-residence/04.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/bessy-residence/05.webp",
+        "width": 1122,
+        "height": 1402,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": true
+      },
+      {
+        "src": "/projects/bessy-residence/06.webp",
+        "width": 1122,
+        "height": 1402,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": true
+      },
+      {
+        "src": "/projects/bessy-residence/07.webp",
+        "width": 1122,
+        "height": 1402,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": true
+      },
+      {
+        "src": "/projects/bessy-residence/08.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/bessy-residence/09.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/bessy-residence/10.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/bessy-residence/11.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/bessy-residence/12.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/bessy-residence/13.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/bessy-residence/14.webp",
+        "width": 941,
+        "height": 1672,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": true
+      },
+      {
+        "src": "/projects/bessy-residence/15.webp",
+        "width": 941,
+        "height": 1672,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": true
+      },
+      {
+        "src": "/projects/bessy-residence/16.webp",
+        "width": 941,
+        "height": 1672,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": true
+      },
+      {
+        "src": "/projects/bessy-residence/17.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/bessy-residence/18.webp",
+        "width": 1122,
+        "height": 1402,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": true
+      },
+      {
+        "src": "/projects/bessy-residence/19.webp",
+        "width": 1122,
+        "height": 1402,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": true
+      },
+      {
+        "src": "/projects/bessy-residence/20.webp",
+        "width": 1122,
+        "height": 1402,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": true
+      }
+    ]
+  },
+  {
+    "slug": "sunil-singhvi-apartment",
+    "name": "Sunil Singhvi Apartment",
+    "order": 2,
+    "cover": {
+      "src": "/projects/sunil-singhvi-apartment/05.webp",
+      "width": 1678,
+      "height": 937,
+      "group": "Renders",
+      "category": "render",
+      "isPortrait": false
+    },
+    "groups": [
+      "Renders",
+      "Plan"
+    ],
+    "images": [
+      {
+        "src": "/projects/sunil-singhvi-apartment/05.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/06.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/07.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/08.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/09.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/10.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/11.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/12.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/13.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/14.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/15.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/16.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/17.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/18.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/19.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/20.webp",
+        "width": 1695,
+        "height": 928,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/21.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/01.webp",
+        "width": 768,
+        "height": 2048,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": true
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/02.webp",
+        "width": 768,
+        "height": 2048,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": true
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/03.webp",
+        "width": 768,
+        "height": 2048,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": true
+      },
+      {
+        "src": "/projects/sunil-singhvi-apartment/04.webp",
+        "width": 768,
+        "height": 2048,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": true
+      }
+    ]
+  },
+  {
+    "slug": "mint-restaurant-mahabalipuram",
+    "name": "Mint Restaurant Mahabalipuram",
+    "order": 3,
+    "cover": {
+      "src": "/projects/mint-restaurant-mahabalipuram/17.webp",
+      "width": 1672,
+      "height": 941,
+      "group": "Outdoor",
+      "category": "render",
+      "isPortrait": false
+    },
+    "groups": [
+      "Outdoor",
+      "Plan",
+      "Interior – Option 1",
+      "Interior – Option 2"
+    ],
+    "images": [
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/17.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Outdoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/18.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Outdoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/19.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Outdoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/20.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Outdoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/21.webp",
+        "width": 1669,
+        "height": 942,
+        "group": "Outdoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/22.webp",
+        "width": 1670,
+        "height": 941,
+        "group": "Outdoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/23.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Outdoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/01.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/02.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/03.webp",
+        "width": 1644,
+        "height": 957,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/04.webp",
+        "width": 2000,
+        "height": 1088,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/05.webp",
+        "width": 2000,
+        "height": 1091,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/06.webp",
+        "width": 2000,
+        "height": 1120,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/07.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Interior – Option 1",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/08.webp",
+        "width": 1676,
+        "height": 938,
+        "group": "Interior – Option 1",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/09.webp",
+        "width": 1676,
+        "height": 939,
+        "group": "Interior – Option 1",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/10.webp",
+        "width": 1672,
+        "height": 940,
+        "group": "Interior – Option 1",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/11.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Interior – Option 1",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/12.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Interior – Option 2",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/13.webp",
+        "width": 1672,
+        "height": 940,
+        "group": "Interior – Option 2",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/14.webp",
+        "width": 1677,
+        "height": 938,
+        "group": "Interior – Option 2",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/15.webp",
+        "width": 1673,
+        "height": 940,
+        "group": "Interior – Option 2",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/mint-restaurant-mahabalipuram/16.webp",
+        "width": 1677,
+        "height": 938,
+        "group": "Interior – Option 2",
+        "category": "render",
+        "isPortrait": false
+      }
+    ]
+  },
+  {
+    "slug": "iifl-rooftop-restaurant",
+    "name": "IIFL Rooftop Restaurant",
+    "order": 4,
+    "cover": {
+      "src": "/projects/iifl-rooftop-restaurant/03.webp",
+      "width": 1696,
+      "height": 927,
+      "group": "Indoor",
+      "category": "render",
+      "isPortrait": false
+    },
+    "groups": [
+      "Indoor",
+      "Outdoor",
+      "Plan"
+    ],
+    "images": [
+      {
+        "src": "/projects/iifl-rooftop-restaurant/03.webp",
+        "width": 1696,
+        "height": 927,
+        "group": "Indoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/04.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Indoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/05.webp",
+        "width": 1671,
+        "height": 941,
+        "group": "Indoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/06.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Indoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/07.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Indoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/08.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Indoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/09.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Indoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/10.webp",
+        "width": 1698,
+        "height": 926,
+        "group": "Indoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/11.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Indoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/12.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Outdoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/13.webp",
+        "width": 1493,
+        "height": 1054,
+        "group": "Outdoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/14.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Outdoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/15.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Outdoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/16.webp",
+        "width": 1448,
+        "height": 1086,
+        "group": "Outdoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/17.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Outdoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/18.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Outdoor",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/01.webp",
+        "width": 1122,
+        "height": 1402,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": true
+      },
+      {
+        "src": "/projects/iifl-rooftop-restaurant/02.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": false
+      }
+    ]
+  },
+  {
+    "slug": "pushkar-apartments",
+    "name": "Pushkar Apartments",
+    "order": 5,
+    "cover": {
+      "src": "/projects/pushkar-apartments/01.webp",
+      "width": 1672,
+      "height": 941,
+      "group": "Renders",
+      "category": "render",
+      "isPortrait": false
+    },
+    "groups": [
+      "Renders"
+    ],
+    "images": [
+      {
+        "src": "/projects/pushkar-apartments/01.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/02.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/03.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/04.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/05.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/06.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/07.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/08.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/09.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/10.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/11.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/12.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/13.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/14.webp",
+        "width": 1448,
+        "height": 815,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/15.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/16.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/17.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/18.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/19.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/20.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/21.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/22.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/pushkar-apartments/23.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      }
+    ]
+  },
+  {
+    "slug": "malkoha-residence",
+    "name": "Malkoha Residence",
+    "order": 6,
+    "cover": {
+      "src": "/projects/malkoha-residence/01.webp",
+      "width": 1679,
+      "height": 937,
+      "group": "Renders",
+      "category": "render",
+      "isPortrait": false
+    },
+    "groups": [
+      "Renders"
+    ],
+    "images": [
+      {
+        "src": "/projects/malkoha-residence/01.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/malkoha-residence/02.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/malkoha-residence/03.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/malkoha-residence/04.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/malkoha-residence/05.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/malkoha-residence/06.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/malkoha-residence/07.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/malkoha-residence/08.webp",
+        "width": 2000,
+        "height": 1116,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/malkoha-residence/09.webp",
+        "width": 2000,
+        "height": 1116,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/malkoha-residence/10.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/malkoha-residence/11.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/malkoha-residence/12.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/malkoha-residence/13.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/malkoha-residence/14.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/malkoha-residence/15.webp",
+        "width": 2000,
+        "height": 1116,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      }
+    ]
+  },
+  {
+    "slug": "vaf",
+    "name": "VAF",
+    "order": 7,
+    "cover": {
+      "src": "/projects/vaf/01.webp",
+      "width": 1672,
+      "height": 941,
+      "group": "Renders",
+      "category": "render",
+      "isPortrait": false
+    },
+    "groups": [
+      "Renders"
+    ],
+    "images": [
+      {
+        "src": "/projects/vaf/01.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/vaf/02.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/vaf/03.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/vaf/04.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/vaf/05.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/vaf/06.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      }
+    ]
+  },
+  {
+    "slug": "refex-office",
+    "name": "Refex Office",
+    "order": 8,
+    "cover": {
+      "src": "/projects/refex-office/01.webp",
+      "width": 1672,
+      "height": 941,
+      "group": "Option 1",
+      "category": "render",
+      "isPortrait": false
+    },
+    "groups": [
+      "Option 1",
+      "Option 2",
+      "Plan"
+    ],
+    "images": [
+      {
+        "src": "/projects/refex-office/01.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Option 1",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/refex-office/02.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Option 1",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/refex-office/03.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Option 1",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/refex-office/04.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Option 1",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/refex-office/05.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Option 1",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/refex-office/06.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Option 1",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/refex-office/07.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Option 1",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/refex-office/08.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Option 2",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/refex-office/09.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Option 2",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/refex-office/10.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Option 2",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/refex-office/11.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Option 2",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/refex-office/12.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Option 2",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/refex-office/13.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Option 2",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/refex-office/14.webp",
+        "width": 1122,
+        "height": 1402,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": true
+      },
+      {
+        "src": "/projects/refex-office/15.webp",
+        "width": 1254,
+        "height": 1254,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": false
+      }
+    ]
+  },
+  {
+    "slug": "vrx-vijayaraja",
+    "name": "VRX – Vijayaraja",
+    "order": 9,
+    "cover": {
+      "src": "/projects/vrx-vijayaraja/03.webp",
+      "width": 1679,
+      "height": 937,
+      "group": "Renders",
+      "category": "render",
+      "isPortrait": false
+    },
+    "groups": [
+      "Renders",
+      "Plan",
+      "Section & Elevation"
+    ],
+    "images": [
+      {
+        "src": "/projects/vrx-vijayaraja/03.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/vrx-vijayaraja/04.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/vrx-vijayaraja/05.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/vrx-vijayaraja/06.webp",
+        "width": 1695,
+        "height": 928,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/vrx-vijayaraja/07.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/vrx-vijayaraja/08.webp",
+        "width": 1679,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/vrx-vijayaraja/09.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/vrx-vijayaraja/10.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/vrx-vijayaraja/11.webp",
+        "width": 1678,
+        "height": 937,
+        "group": "Renders",
+        "category": "render",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/vrx-vijayaraja/01.webp",
+        "width": 1122,
+        "height": 1402,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": true
+      },
+      {
+        "src": "/projects/vrx-vijayaraja/02.webp",
+        "width": 1122,
+        "height": 1402,
+        "group": "Plan",
+        "category": "plan",
+        "isPortrait": true
+      },
+      {
+        "src": "/projects/vrx-vijayaraja/12.webp",
+        "width": 1672,
+        "height": 941,
+        "group": "Section & Elevation",
+        "category": "plan",
+        "isPortrait": false
+      },
+      {
+        "src": "/projects/vrx-vijayaraja/13.webp",
+        "width": 1983,
+        "height": 793,
+        "group": "Section & Elevation",
+        "category": "plan",
+        "isPortrait": false
+      }
+    ]
+  }
+]
