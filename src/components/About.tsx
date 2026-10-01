@@ -1,4 +1,8 @@
+"use client";
+
+import { useRef } from "react";
 import type { ElementType } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import {
   Camera,
   Briefcase,
@@ -6,6 +10,12 @@ import {
   Mail,
   MessageCircle,
   ArrowUpRight,
+  PenTool,
+  Box,
+  Sun,
+  Sparkles,
+  Layers,
+  Image as ImageIcon,
 } from "lucide-react";
 import { contact, education, profile, skills } from "@/data/site-content";
 import { EyebrowLabel } from "./EyebrowLabel";
@@ -18,9 +28,30 @@ const socialIcons: Record<string, ElementType> = {
   Behance: Palette,
 };
 
+const skillIcons: Record<string, ElementType> = {
+  AutoCAD: PenTool,
+  SketchUp: Box,
+  Lumion: Sun,
+  "V-Ray": Sparkles,
+  Revit: Layers,
+  Photoshop: ImageIcon,
+};
+
 export function About() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "center center"],
+  });
+  const scale = useTransform(scrollYProgress, [0, 1], [1.12, 1]);
+  const glowOpacity = useTransform(scrollYProgress, [0, 1], [0.25, 1]);
+
   return (
-    <section id="about" className="bg-ink py-28 md:py-36">
+    <section
+      id="about"
+      ref={sectionRef}
+      className="overflow-hidden bg-ink py-28 md:py-36"
+    >
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <Reveal>
           <EyebrowLabel index="01">About</EyebrowLabel>
@@ -29,8 +60,14 @@ export function About() {
         <div className="mt-10 grid md:grid-cols-[1.15fr_1fr] gap-16 md:gap-12 items-center">
           <Reveal className="relative flex flex-col items-center md:items-start">
             <div className="relative w-full max-w-md md:max-w-none mx-auto">
-              <div className="absolute inset-x-0 top-1/4 mx-auto h-3/4 w-3/4 rounded-full bg-accent/40 blur-[100px]" />
-              <div className="absolute -inset-x-6 top-10 h-40 rounded-full bg-accent-soft/20 blur-3xl" />
+              <motion.div
+                style={{ opacity: glowOpacity }}
+                className="absolute inset-x-0 top-1/4 mx-auto h-3/4 w-3/4 rounded-full bg-accent/40 blur-[100px]"
+              />
+              <motion.div
+                style={{ opacity: glowOpacity }}
+                className="absolute -inset-x-6 top-10 h-40 rounded-full bg-accent-soft/20 blur-3xl"
+              />
 
               <div className="absolute -top-2 left-2 md:left-6 z-20 text-center md:text-left">
                 <p className="text-xs uppercase tracking-widest text-paper-dim">
@@ -41,12 +78,14 @@ export function About() {
                 </p>
               </div>
 
-              <PortraitTilt
-                src={profile.portrait}
-                alt={profile.name}
-                width={profile.portraitWidth}
-                height={profile.portraitHeight}
-              />
+              <motion.div style={{ scale }}>
+                <PortraitTilt
+                  src={profile.portrait}
+                  alt={profile.name}
+                  width={profile.portraitWidth}
+                  height={profile.portraitHeight}
+                />
+              </motion.div>
             </div>
           </Reveal>
 
@@ -79,14 +118,18 @@ export function About() {
                 Tools &amp; Skills
               </h3>
               <div className="flex flex-wrap gap-3">
-                {skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="rounded-lg border border-line px-3 py-2 text-sm text-paper-dim"
-                  >
-                    {skill}
-                  </span>
-                ))}
+                {skills.map((skill) => {
+                  const Icon = skillIcons[skill] ?? PenTool;
+                  return (
+                    <span
+                      key={skill}
+                      className="flex items-center gap-2 rounded-lg border border-line px-3 py-2 text-sm text-paper-dim"
+                    >
+                      <Icon className="h-4 w-4 text-accent" />
+                      {skill}
+                    </span>
+                  );
+                })}
               </div>
             </div>
 

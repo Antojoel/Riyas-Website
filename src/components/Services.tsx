@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { Home, Utensils, Building2, Ruler } from "lucide-react";
@@ -22,9 +22,26 @@ const previewSrc: (string | undefined)[] = [
 export function Services() {
   const [hovered, setHovered] = useState<number | null>(null);
 
+  // Scrolling away can leave a row "hovered" (the browser re-hit-tests
+  // whatever slides under a stationary cursor), which would otherwise
+  // strand the floating preview on screen — clear it on any scroll.
+  useEffect(() => {
+    if (hovered === null) return;
+    const clear = () => setHovered(null);
+    window.addEventListener("scroll", clear, { passive: true, capture: true });
+    window.addEventListener("wheel", clear, { passive: true });
+    window.addEventListener("touchmove", clear, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", clear, true);
+      window.removeEventListener("wheel", clear);
+      window.removeEventListener("touchmove", clear);
+    };
+  }, [hovered]);
+
   return (
     <section
       id="services"
+      onMouseLeave={() => setHovered(null)}
       className="relative overflow-hidden border-y border-line bg-ink-soft py-28 md:py-36"
     >
       <div className="mx-auto max-w-7xl px-6 md:px-10">
@@ -98,7 +115,7 @@ export function Services() {
               animate={{ opacity: 1, scale: 1, rotate: 2, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 10 }}
               transition={{ duration: 0.35, ease: "easeOut" }}
-              className="h-44 w-44 overflow-hidden rounded-2xl border border-line shadow-2xl shadow-black/60"
+              className="relative h-44 w-44 overflow-hidden rounded-2xl border border-line shadow-2xl shadow-black/60"
             >
               <Image
                 src={previewSrc[hovered]!}

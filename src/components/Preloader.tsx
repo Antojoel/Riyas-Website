@@ -44,7 +44,7 @@ export function Preloader() {
       transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
       className="fixed inset-0 z-[999] flex flex-col items-center justify-center overflow-hidden bg-ink"
     >
-      <div className="pointer-events-none absolute h-[50vmax] w-[50vmax] rounded-full orb-gradient blur-2xl opacity-50" />
+      <div className="pointer-events-none absolute h-[50vmax] w-[50vmax] rounded-full ambient-glow blur-2xl" />
 
       <div className="absolute top-8 left-6 md:left-10 text-xs uppercase tracking-[0.3em] text-paper-dim">
         Riyas<span className="text-accent">.</span>

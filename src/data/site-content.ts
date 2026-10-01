@@ -13,13 +13,13 @@ export const profile = {
   portrait: "/img/riyas-portrait.webp",
   portraitWidth: 894,
   portraitHeight: 1118,
-  yearsActive: "5+", // PLACEHOLDER
-  projectsCompleted: "9+", // PLACEHOLDER, based on folders provided
+  yearsActive: "6+",
+  projectsCompleted: "50+",
 };
 
 export const stats = [
-  { label: "Projects Delivered", value: "9+" },
-  { label: "Years Practicing", value: "5+" },
+  { label: "Projects Delivered", value: "50+" },
+  { label: "Years Practicing", value: "6+" },
   { label: "Cities Worked In", value: "3+" },
 ];
 
