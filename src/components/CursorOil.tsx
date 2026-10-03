@@ -23,6 +23,9 @@ const PARTS: [number, number, number, number, number, number][] = [
   [5, 14, 2, 240, 0.5, 4.6],
 ];
 
+// Overall size multiplier for the whole blob (body, lobes, droplets, orbits).
+const SIZE = 1.4;
+
 export function CursorOil({ pointer }: { pointer: RefObject<Pointer> }) {
   const svgRef = useRef<SVGSVGElement>(null);
   const blobs = useRef<(SVGEllipseElement | null)[]>([]);
@@ -49,7 +52,7 @@ export function CursorOil({ pointer }: { pointer: RefObject<Pointer> }) {
       const box = svg!.getBoundingClientRect();
       const px = p.x - box.left;
       const py = p.y - box.top;
-      const k = Math.min(1.25, Math.max(0.7, Math.min(box.width, box.height) / 850));
+      const k = Math.min(1.25, Math.max(0.7, Math.min(box.width, box.height) / 850)) * SIZE;
       const t = still ? 0 : now / 1000;
       const steps = 3;
       const h = dt / steps;
