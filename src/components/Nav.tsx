@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { nav, profile } from "@/data/site-content";
+import { nav } from "@/data/site-content";
 import { TransitionLink } from "./PageTransition";
 
 export function Nav() {
@@ -38,7 +38,7 @@ export function Nav() {
           className="whitespace-nowrap font-display text-lg tracking-wide text-paper md:text-xl"
           onClick={() => setOpen(false)}
         >
-          {profile.name}
+          <span className="text-accent">M</span>R
           <span className="text-accent">.</span>
         </TransitionLink>
 

@@ -63,6 +63,11 @@ function walk(dir) {
   return out;
 }
 
+const COVER_OVERRIDES = {
+  "mint-restaurant-mahabalipuram": "18.webp",
+  "pushkar-apartments": "02.webp",
+};
+
 const GROUP_PRIORITY = [
   "Renders",
   "Interior",
@@ -160,7 +165,16 @@ async function main() {
       return a.src.localeCompare(b.src);
     });
 
+    // Hand-picked covers (file name within the project folder).
+    const forced = COVER_OVERRIDES[slug];
+    const forcedItem = forced && items.find((i) => i.src.endsWith(`/${forced}`));
+    if (forcedItem) {
+      items.splice(items.indexOf(forcedItem), 1);
+      items.unshift(forcedItem);
+    }
+
     const cover =
+      forcedItem ||
       items.find((i) => i.category === "render" && !i.isPortrait) ||
       items.find((i) => i.category === "render") ||
       items[0];

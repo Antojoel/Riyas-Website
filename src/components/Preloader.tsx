@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export function Preloader() {
-  const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = useState(1);
   const [exiting, setExiting] = useState(false);
   const [mounted, setMounted] = useState(true);
 
@@ -17,7 +17,7 @@ export function Preloader() {
     function tick(ts: number) {
       if (start === null) start = ts;
       const elapsed = ts - start;
-      const pct = Math.min(100, Math.round((elapsed / duration) * 100));
+      const pct = Math.min(100, Math.max(1, Math.round((elapsed / duration) * 100)));
       setProgress(pct);
       if (pct < 100) {
         raf = requestAnimationFrame(tick);
@@ -50,14 +50,19 @@ export function Preloader() {
         Riyas<span className="text-accent">.</span>
       </div>
 
-      <div className="absolute bottom-8 right-6 md:right-10 text-xs uppercase tracking-[0.3em] text-paper-dim tabular-nums">
-        {progress}%
+      {/* fixed-width, right-anchored so the counter never shifts as digits change */}
+      <div className="absolute bottom-6 right-6 flex items-start font-light leading-none text-paper tabular-nums md:bottom-8 md:right-10">
+        <span className="min-w-[3ch] text-right text-6xl md:text-8xl">{progress}</span>
+        <span className="ml-1 mt-1 text-xl text-paper-dim md:mt-2 md:text-3xl">%</span>
       </div>
 
+      {/* background-clip:text only paints inside the element's box, and the
+          script's swashes/descenders reach well outside the line box — the
+          em padding gives them room, negative margin cancels it in layout */}
       <p
-        className="font-signature relative select-none px-4 text-center text-6xl sm:text-7xl md:text-8xl lg:text-9xl"
+        className="font-signature relative -mx-[0.4em] -my-[0.5em] select-none px-[0.4em] py-[0.5em] text-center text-5xl min-[400px]:text-6xl sm:text-7xl md:text-8xl lg:text-9xl"
         style={{
-          backgroundImage: `linear-gradient(to right, var(--paper) ${progress}%, var(--line) ${progress}%)`,
+          backgroundImage: `linear-gradient(to right, var(--accent) ${progress}%, var(--paper) ${progress}%)`,
           WebkitBackgroundClip: "text",
           backgroundClip: "text",
           color: "transparent",

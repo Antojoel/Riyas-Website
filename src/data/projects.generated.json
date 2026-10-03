@@ -369,7 +369,7 @@
     "name": "Mint Restaurant Mahabalipuram",
     "order": 3,
     "cover": {
-      "src": "/projects/mint-restaurant-mahabalipuram/17.webp",
+      "src": "/projects/mint-restaurant-mahabalipuram/18.webp",
       "width": 1672,
       "height": 941,
       "group": "Outdoor",
@@ -384,7 +384,7 @@
     ],
     "images": [
       {
-        "src": "/projects/mint-restaurant-mahabalipuram/17.webp",
+        "src": "/projects/mint-restaurant-mahabalipuram/18.webp",
         "width": 1672,
         "height": 941,
         "group": "Outdoor",
@@ -392,7 +392,7 @@
         "isPortrait": false
       },
       {
-        "src": "/projects/mint-restaurant-mahabalipuram/18.webp",
+        "src": "/projects/mint-restaurant-mahabalipuram/17.webp",
         "width": 1672,
         "height": 941,
         "group": "Outdoor",
@@ -738,7 +738,7 @@
     "name": "Pushkar Apartments",
     "order": 5,
     "cover": {
-      "src": "/projects/pushkar-apartments/01.webp",
+      "src": "/projects/pushkar-apartments/02.webp",
       "width": 1672,
       "height": 941,
       "group": "Renders",
@@ -750,7 +750,7 @@
     ],
     "images": [
       {
-        "src": "/projects/pushkar-apartments/01.webp",
+        "src": "/projects/pushkar-apartments/02.webp",
         "width": 1672,
         "height": 941,
         "group": "Renders",
@@ -758,7 +758,7 @@
         "isPortrait": false
       },
       {
-        "src": "/projects/pushkar-apartments/02.webp",
+        "src": "/projects/pushkar-apartments/01.webp",
         "width": 1672,
         "height": 941,
         "group": "Renders",

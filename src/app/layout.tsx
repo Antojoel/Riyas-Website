@@ -15,12 +15,13 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-// Variable font for the hero's proximity-hover name effect — loaded with
-// the "wdth" axis (wght is included by default for variable fonts).
+// Variable font for the hero's proximity name effect. wght (100–1000) is
+// included by default; wdth (25–151) alone only changes glyph width ~12%,
+// so XTRA (counter width) is loaded too for the ultra-condensed/wide look.
 const robotoFlex = Roboto_Flex({
   variable: "--font-proximity",
   subsets: ["latin"],
-  axes: ["wdth"],
+  axes: ["wdth", "XTRA"],
 });
 
 export const metadata: Metadata = {

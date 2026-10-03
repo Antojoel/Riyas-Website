@@ -74,19 +74,6 @@ body {
   font-family: var(--font-proximity), sans-serif;
 }
 
-/* Soft red bloom that tracks the cursor in the hero — no static shape,
-   it only exists where the pointer is. */
-.cursor-glow {
-  background: radial-gradient(
-    circle,
-    rgba(255, 77, 77, 0.85) 0%,
-    rgba(226, 0, 15, 0.4) 32%,
-    rgba(226, 0, 15, 0) 68%
-  );
-  mix-blend-mode: screen;
-  filter: blur(6px);
-}
-
 /* Static decorative glow used behind the preloader counter */
 .ambient-glow {
   background: radial-gradient(
@@ -111,7 +98,7 @@ body {
 
 /* About section photo: permanent soft fade on the card's own edges so it
    melts into the page background. Content and photo no longer overlap
-   (content is a left column, photo ends as a right-anchored block), so
+   (content is a right column, photo ends as a left-anchored block), so
    this just softens the card's edges rather than fighting for legibility.
    Mobile only needs the bottom fade since the photo spans full width. */
 .about-photo-fade {
@@ -120,7 +107,7 @@ body {
 @media (min-width: 768px) {
   .about-photo-fade {
     background:
-      linear-gradient(to right, var(--ink) 0%, color-mix(in srgb, var(--ink) 70%, transparent) 20%, transparent 55%),
+      linear-gradient(to left, var(--ink) 0%, color-mix(in srgb, var(--ink) 70%, transparent) 20%, transparent 55%),
       linear-gradient(to top, var(--ink) 0%, transparent 30%);
   }
 }

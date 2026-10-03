@@ -34,16 +34,16 @@ export function About() {
 
       // Card is positioned/sized with real layout props (not clip-path or
       // scale), anchored from the edge it ends up flush against so it can
-      // never overshoot the viewport: right-anchored on desktop (photo ends
-      // as the right 55%), left-anchored on mobile (photo ends full-width).
+      // never overshoot the viewport: left-anchored on desktop (photo ends
+      // as the left 55%), left-anchored on mobile (photo ends full-width).
       // Width uses % of the pinned wrapper, never vw, so a reserved
       // scrollbar gutter can't push it past the visible edge.
       const cardStart = isMobile
         ? { left: "7.5%", top: "27.5vh", width: "85%", height: "45vh", borderRadius: 24 }
-        : { right: "27.5%", top: "25vh", width: "45%", height: "50vh", borderRadius: 24 };
+        : { left: "27.5%", top: "25vh", width: "45%", height: "50vh", borderRadius: 24 };
       const cardEnd = isMobile
         ? { left: "0%", top: 0, width: "100%", height: "60vh", borderRadius: 0 }
-        : { right: "0%", top: 0, width: "55%", height: "100vh", borderRadius: 0 };
+        : { left: "0%", top: 0, width: "55%", height: "100vh", borderRadius: 0 };
 
       if (reduceMotion) {
         gsap.set(cardRef.current, {
@@ -152,7 +152,7 @@ export function About() {
     >
       <div className="relative h-screen min-h-[640px] max-w-full overflow-hidden">
         {/* stage 1 + 2: card that resizes/repositions from a small centered
-            box to its final place — right 55% of the viewport on desktop,
+            box to its final place — left 55% of the viewport on desktop,
             top 60vh on mobile. Real layout props (left/right/top/width/
             height), never transform: scale, so the image keeps native
             resolution the whole time. Positioned flush against the edge it
@@ -195,9 +195,9 @@ export function About() {
         </div>
 
         {/* stage 3: revealed content — stacked below the photo on mobile
-            (pt clears the 60vh photo band, no overlap), left column on
-            desktop so it never sits under the face on the right */}
-        <div className="relative z-10 flex h-full items-start justify-center overflow-y-auto px-6 pt-[calc(60vh+24px)] pb-6 md:items-center md:justify-start md:overflow-visible md:pt-0 md:pr-0 md:pb-0 md:pl-[clamp(24px,8vw,140px)]">
+            (pt clears the 60vh photo band, no overlap), right column on
+            desktop so it never sits under the face on the left */}
+        <div className="relative z-10 flex h-full items-start justify-center overflow-y-auto px-6 pt-[calc(60vh+24px)] pb-6 md:items-center md:justify-end md:overflow-visible md:pt-0 md:pb-0 md:pl-0 md:pr-[clamp(24px,8vw,140px)]">
           <div className="relative z-10 w-full space-y-7 md:max-w-[600px]">
             <div
               ref={(el) => {

@@ -1,63 +1,40 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { useRef } from "react";
+import type { PointerEvent } from "react";
 import { profile } from "@/data/site-content";
-import { ProximityName } from "./ProximityName";
+import { CursorOil } from "./CursorOil";
+import { ProximityName, type Pointer } from "./ProximityName";
 
 export function Hero() {
-  const ref = useRef<HTMLElement>(null);
-  const [active, setActive] = useState(false);
-  const mousePos = useRef({ x: 0, y: 0 });
-  const gx = useMotionValue(0);
-  const gy = useMotionValue(0);
-  const springX = useSpring(gx, { stiffness: 120, damping: 20, mass: 0.4 });
-  const springY = useSpring(gy, { stiffness: 120, damping: 20, mass: 0.4 });
+  const pointer = useRef<Pointer>({ x: 0, y: 0, inside: false });
 
-  useEffect(() => {
-    function handleMouseMove(e: MouseEvent) {
-      const rect = ref.current?.getBoundingClientRect();
-      if (!rect) return;
-      const inside =
-        e.clientY >= rect.top &&
-        e.clientY <= rect.bottom &&
-        e.clientX >= rect.left &&
-        e.clientX <= rect.right;
-      setActive(inside);
-      mousePos.current = { x: e.clientX, y: e.clientY };
-      gx.set(e.clientX - rect.left);
-      gy.set(e.clientY - rect.top);
-    }
-    function handleLeave() {
-      setActive(false);
-    }
-    window.addEventListener("mousemove", handleMouseMove);
-    document.documentElement.addEventListener("mouseleave", handleLeave);
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      document.documentElement.removeEventListener("mouseleave", handleLeave);
-    };
-  }, [gx, gy]);
+  function handlePointerMove(e: PointerEvent<HTMLElement>) {
+    if (e.pointerType !== "mouse") return;
+    pointer.current = { x: e.clientX, y: e.clientY, inside: true };
+  }
+
+  function handlePointerLeave() {
+    pointer.current.inside = false;
+  }
 
   const name = profile.name.toUpperCase();
 
   return (
     <section
-      ref={ref}
+      onPointerMove={handlePointerMove}
+      onPointerLeave={handlePointerLeave}
       className="relative h-screen min-h-[720px] overflow-hidden bg-ink"
     >
-      {/* soft red bloom that follows the cursor — no static shape */}
-      <motion.div
-        style={{ left: springX, top: springY, opacity: active ? 1 : 0 }}
-        className="pointer-events-none absolute z-0 h-[46vmax] w-[46vmax] -translate-x-1/2 -translate-y-1/2 rounded-full cursor-glow transition-opacity duration-500"
-      />
+      {/* red oil blob + droplets that follow the cursor, behind the name */}
+      <CursorOil pointer={pointer} />
 
-      {/* giant name + tagline */}
+      {/* tagline + giant name */}
       <div className="absolute inset-x-0 top-1/2 z-10 flex -translate-y-1/2 select-none flex-col items-center">
-        <ProximityName name={name} active={active} mousePos={mousePos} />
-        <p className="mt-4 px-4 text-center text-[10px] font-semibold uppercase tracking-[0.2em] text-paper-dim sm:tracking-[0.35em] md:mt-6 md:text-xs">
+        <p className="mb-4 px-4 text-center text-[10px] font-semibold uppercase tracking-[0.2em] text-paper-dim sm:tracking-[0.35em] md:mb-6 md:text-xs">
           Architectural Portfolio
         </p>
+        <ProximityName name={name} pointer={pointer} />
       </div>
 
       {/* bottom content: subtext + CTAs */}

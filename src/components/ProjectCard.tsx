@@ -17,7 +17,7 @@ export function ProjectCard({
   return (
     <TransitionLink
       href={`/projects/${project.slug}`}
-      className={`group relative block h-full w-full overflow-hidden rounded-2xl bg-ink-soft ${className}`}
+      className={`group relative block h-full w-full overflow-hidden rounded-2xl bg-ink-soft transition-[translate,scale,box-shadow] duration-300 ease-out hover:z-10 hover:-translate-y-2 hover:scale-[1.03] hover:shadow-2xl hover:shadow-black/60 ${className}`}
     >
       <motion.div
         initial={{ clipPath: "inset(14% 0 14% 0)", opacity: 0 }}
