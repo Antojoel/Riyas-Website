@@ -46,14 +46,8 @@ export function Preloader() {
     >
       <div className="pointer-events-none absolute h-[50vmax] w-[50vmax] rounded-full ambient-glow blur-2xl" />
 
-      <div className="absolute top-8 left-6 md:left-10 text-xs uppercase tracking-[0.3em] text-paper-dim">
-        Riyas<span className="text-accent">.</span>
-      </div>
-
-      {/* fixed-width, right-anchored so the counter never shifts as digits change */}
-      <div className="absolute bottom-6 right-6 flex items-start font-light leading-none text-paper tabular-nums md:bottom-8 md:right-10">
-        <span className="min-w-[3ch] text-right text-6xl md:text-8xl">{progress}</span>
-        <span className="ml-1 mt-1 text-xl text-paper-dim md:mt-2 md:text-3xl">%</span>
+      <div className="absolute top-7 left-6 font-display text-2xl tracking-wide text-paper md:top-8 md:left-10 md:text-3xl">
+        <span className="text-accent">M</span>R<span className="text-accent">.</span>
       </div>
 
       {/* background-clip:text only paints inside the element's box, and the
@@ -71,9 +65,12 @@ export function Preloader() {
         Mohammed Riyas
       </p>
 
-      <p className="relative mt-6 text-xs uppercase tracking-[0.3em] text-paper-dim text-center px-6">
-        Designing Spaces That People Remember
-      </p>
+      {/* counter takes the tagline's old spot under the name; the number box
+          has a fixed width so the group never shifts as digits change */}
+      <div className="font-signature relative mt-8 flex items-baseline justify-center leading-none text-paper md:mt-10">
+        <span className="min-w-[3ch] text-center text-7xl md:text-9xl">{progress}</span>
+        <span className="ml-1 text-3xl text-paper-dim md:text-5xl">%</span>
+      </div>
     </motion.div>
   );
 }

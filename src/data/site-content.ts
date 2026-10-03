@@ -12,7 +12,7 @@ export const profile = {
   tagline: "Architecture shaped by light, material and quiet detail.",
   philosophy:
     "I am highly motivated and passionate about designing spaces that people remember over time, with strong expertise in 3D visualization. Through this portfolio, I aim to present my approach as an architectural designer who values clarity, balance, and meaning in every project.",
-  portrait: "/img/riyas-portrait-hd.webp",
+  portrait: "/img/image.webp",
   portraitWidth: 1121,
   portraitHeight: 1403,
   yearsActive: "6+",
@@ -20,7 +20,7 @@ export const profile = {
 };
 
 export const stats = [
-  { label: "Projects Delivered", value: "50+" },
+  { label: "Projects Worked", value: "50+" },
   { label: "Years Practicing", value: "6+" },
   { label: "Cities Worked In", value: "3+" },
 ];

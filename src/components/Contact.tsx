@@ -12,12 +12,12 @@ export function Contact() {
 
         <Reveal delay={0.1}>
           <h2 className="font-display text-4xl md:text-6xl mt-6 max-w-3xl text-paper">
-            Have a site in mind? Let&apos;s design something for it.
+            Get in Touch
           </h2>
         </Reveal>
 
         <Reveal delay={0.2}>
-          <div className="mt-14 grid gap-8 sm:grid-cols-[1.6fr_1fr_1fr] max-w-3xl">
+          <div className="mt-14 grid gap-8 sm:grid-cols-[1.6fr_1fr] max-w-3xl">
             <a
               href={`mailto:${contact.email}`}
               className="group border-t border-line pt-4 min-w-0"
@@ -34,12 +34,6 @@ export function Contact() {
                 Phone
               </div>
               <div className="mt-2 text-paper">{contact.phone}</div>
-            </div>
-            <div className="border-t border-line pt-4">
-              <div className="text-xs uppercase tracking-widest text-paper-dim">
-                Location
-              </div>
-              <div className="mt-2 text-paper">{contact.location}</div>
             </div>
           </div>
         </Reveal>
