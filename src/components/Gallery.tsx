@@ -4,8 +4,40 @@ import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import type { ProjectImage } from "@/lib/projects";
+import type { ProjectDescription } from "@/data/project-descriptions";
 
-export function Gallery({ images, groups }: { images: ProjectImage[]; groups: string[] }) {
+// Cycle of tile sizes for the bento-style grid. [colSpan, rowSpan] out of a
+// 3-column grid with dense auto-flow — the browser fills gaps itself, so
+// the pattern doesn't need to divide evenly into the image count.
+const TILE_PATTERN = [
+  "sm:col-span-2 sm:row-span-2",
+  "sm:col-span-1 sm:row-span-1",
+  "sm:col-span-1 sm:row-span-1",
+  "sm:col-span-1 sm:row-span-2",
+  "sm:col-span-2 sm:row-span-1",
+  "sm:col-span-1 sm:row-span-1",
+];
+
+// The description tile's row-span needs to scale with its text length, or
+// long copy either overflows a short mobile-width tile or leaves a huge
+// empty short one. Sized conservatively for the narrowest (mobile) column
+// width, which also keeps it safe at wider breakpoints.
+function descriptionRowSpan(length: number) {
+  if (length > 950) return "row-span-5";
+  if (length > 650) return "row-span-4";
+  if (length > 450) return "row-span-3";
+  return "row-span-2";
+}
+
+export function Gallery({
+  images,
+  groups,
+  description,
+}: {
+  images: ProjectImage[];
+  groups: string[];
+  description?: ProjectDescription;
+}) {
   const [activeGroup, setActiveGroup] = useState<string>("All");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
@@ -38,6 +70,24 @@ export function Gallery({ images, groups }: { images: ProjectImage[]; groups: st
 
   const tabs = ["All", ...groups];
   const active = filtered[lightboxIndex ?? -1];
+  const showDescription = Boolean(description) && activeGroup === "All";
+
+  // Mix the description in as a tile of its own, inserted at the midpoint
+  // of the image list so it sits inside the grid rather than before it.
+  type GridEntry =
+    | { kind: "description" }
+    | { kind: "image"; img: ProjectImage; imageIndex: number };
+  const gridEntries = useMemo(() => {
+    const entries: GridEntry[] = filtered.map((img, imageIndex) => ({
+      kind: "image",
+      img,
+      imageIndex,
+    }));
+    if (showDescription) {
+      entries.splice(Math.floor(entries.length / 2), 0, { kind: "description" });
+    }
+    return entries;
+  }, [filtered, showDescription]);
 
   return (
     <div>
@@ -59,24 +109,44 @@ export function Gallery({ images, groups }: { images: ProjectImage[]; groups: st
         </div>
       )}
 
-      <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
-        {filtered.map((img, i) => (
-          <button
-            key={img.src}
-            onClick={() => setLightboxIndex(i)}
-            className="group relative block w-full break-inside-avoid overflow-hidden bg-ink-soft"
-          >
-            <Image
-              src={img.src}
-              alt=""
-              width={img.width}
-              height={img.height}
-              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-              className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-            />
-            <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/20 transition-colors" />
-          </button>
-        ))}
+      <div className="grid grid-cols-2 sm:grid-cols-3 [grid-auto-flow:dense] auto-rows-[160px] gap-4 sm:auto-rows-[220px]">
+        {gridEntries.map((entry, i) => {
+          if (entry.kind === "description") {
+            return (
+              <div
+                key="description"
+                className={`col-span-2 flex flex-col justify-center rounded-2xl border border-line bg-ink-soft p-6 md:p-8 ${descriptionRowSpan(description!.text.length)}`}
+              >
+                {description!.tagline && (
+                  <p className="mb-3 text-xs uppercase tracking-widest text-accent">
+                    {description!.tagline}
+                  </p>
+                )}
+                <p className="text-sm leading-relaxed text-paper-dim md:text-base">
+                  {description!.text}
+                </p>
+              </div>
+            );
+          }
+
+          const { img, imageIndex } = entry;
+          return (
+            <button
+              key={img.src}
+              onClick={() => setLightboxIndex(imageIndex)}
+              className={`group relative block overflow-hidden rounded-xl bg-ink-soft ${TILE_PATTERN[i % TILE_PATTERN.length]}`}
+            >
+              <Image
+                src={img.src}
+                alt=""
+                fill
+                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+              />
+              <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/20 transition-colors" />
+            </button>
+          );
+        })}
       </div>
 
       <AnimatePresence>
@@ -130,7 +200,7 @@ export function Gallery({ images, groups }: { images: ProjectImage[]; groups: st
                 width={active.width}
                 height={active.height}
                 sizes="90vw"
-                className="w-full h-auto max-h-[85vh] object-contain mx-auto"
+                className="w-full h-auto max-h-[85vh] rounded-xl object-contain mx-auto"
                 priority
               />
               <div className="mt-3 text-center text-xs uppercase tracking-widest text-paper-dim">

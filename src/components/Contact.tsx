@@ -17,15 +17,15 @@ export function Contact() {
         </Reveal>
 
         <Reveal delay={0.2}>
-          <div className="mt-14 grid sm:grid-cols-3 gap-8 max-w-3xl">
+          <div className="mt-14 grid gap-8 sm:grid-cols-[1.6fr_1fr_1fr] max-w-3xl">
             <a
               href={`mailto:${contact.email}`}
-              className="group border-t border-line pt-4"
+              className="group border-t border-line pt-4 min-w-0"
             >
               <div className="text-xs uppercase tracking-widest text-paper-dim">
                 Email
               </div>
-              <div className="mt-2 text-paper group-hover:text-accent transition-colors break-words">
+              <div className="mt-2 truncate text-paper group-hover:text-accent transition-colors sm:text-base" title={contact.email}>
                 {contact.email}
               </div>
             </a>

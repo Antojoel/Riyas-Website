@@ -5,6 +5,7 @@ import { Contact } from "@/components/Contact";
 import { Gallery } from "@/components/Gallery";
 import { TransitionLink } from "@/components/PageTransition";
 import { getProject, projects } from "@/lib/projects";
+import { projectDescriptions } from "@/data/project-descriptions";
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -27,7 +28,7 @@ export default async function ProjectPage(props: PageProps<"/projects/[slug]">) 
     <>
       <Nav />
       <main className="flex-1 bg-ink">
-        <section className="relative h-[70vh] min-h-[480px] overflow-hidden">
+        <section className="relative h-[70vh] min-h-[480px] overflow-hidden rounded-b-[2.5rem]">
           <Image
             src={project.cover.src}
             alt={project.name}
@@ -61,7 +62,11 @@ export default async function ProjectPage(props: PageProps<"/projects/[slug]">) 
         </section>
 
         <section className="mx-auto max-w-7xl px-6 md:px-10 py-20">
-          <Gallery images={project.images} groups={project.groups} />
+          <Gallery
+            images={project.images}
+            groups={project.groups}
+            description={projectDescriptions[project.slug]}
+          />
         </section>
 
         <nav className="mx-auto max-w-7xl px-6 md:px-10 pb-20 flex justify-between text-sm uppercase tracking-widest">

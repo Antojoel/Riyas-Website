@@ -18,27 +18,36 @@ export function Nav() {
   }, []);
 
   return (
-    <header
-      className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${
-        scrolled ? "bg-ink/90 backdrop-blur border-b border-line" : "bg-transparent"
-      }`}
-    >
-      <div className="mx-auto max-w-7xl px-6 md:px-10 flex items-center justify-between py-5">
+    <header className="fixed top-4 inset-x-0 z-50 flex justify-center px-4 md:top-6">
+      <motion.div
+        animate={{
+          paddingLeft: scrolled ? 18 : 24,
+          paddingRight: scrolled ? 18 : 24,
+          paddingTop: scrolled ? 8 : 12,
+          paddingBottom: scrolled ? 8 : 12,
+        }}
+        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+        className={`flex w-full max-w-4xl items-center justify-between gap-6 rounded-full border backdrop-blur-xl transition-colors duration-400 ${
+          scrolled
+            ? "border-white/15 bg-ink/60 shadow-xl shadow-black/40"
+            : "border-white/10 bg-white/5 shadow-lg shadow-black/20"
+        }`}
+      >
         <TransitionLink
           href="/"
-          className="font-display text-xl tracking-wide text-paper"
+          className="whitespace-nowrap font-display text-lg tracking-wide text-paper md:text-xl"
           onClick={() => setOpen(false)}
         >
           {profile.name}
           <span className="text-accent">.</span>
         </TransitionLink>
 
-        <nav className="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest text-paper-dim">
+        <nav className="hidden items-center gap-7 text-sm uppercase tracking-widest text-paper-dim md:flex">
           {nav.map((item) => (
             <Link
               key={item.href}
               href={`/${item.href}`}
-              className="hover:text-paper transition-colors"
+              className="transition-colors hover:text-paper"
             >
               {item.label}
             </Link>
@@ -48,7 +57,7 @@ export function Nav() {
         <button
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
-          className="md:hidden flex flex-col gap-1.5 w-8"
+          className="flex w-7 flex-col gap-1.5 md:hidden"
         >
           <span
             className={`h-px bg-paper transition-transform ${open ? "translate-y-1.5 rotate-45" : ""}`}
@@ -58,30 +67,31 @@ export function Nav() {
             className={`h-px bg-paper transition-transform ${open ? "-translate-y-1.5 -rotate-45" : ""}`}
           />
         </button>
-      </div>
+      </motion.div>
 
+      {/* mobile menu — expands below the island, same glass treatment */}
       <AnimatePresence>
         {open && (
-          <motion.nav
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="md:hidden overflow-hidden bg-ink border-b border-line"
+          <motion.div
+            initial={{ opacity: 0, y: -12, scale: 0.96 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -12, scale: 0.96 }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute left-1/2 top-full mt-3 w-[calc(100vw-2rem)] max-w-sm -translate-x-1/2 rounded-3xl border border-white/15 bg-ink/70 shadow-xl shadow-black/40 backdrop-blur-xl md:hidden"
           >
-            <div className="flex flex-col px-6 py-4 gap-4 text-sm uppercase tracking-widest text-paper-dim">
+            <div className="flex flex-col gap-4 px-6 py-5 text-sm uppercase tracking-widest text-paper-dim">
               {nav.map((item) => (
                 <Link
                   key={item.href}
                   href={`/${item.href}`}
                   onClick={() => setOpen(false)}
-                  className="hover:text-paper transition-colors"
+                  className="transition-colors hover:text-paper"
                 >
                   {item.label}
                 </Link>
               ))}
             </div>
-          </motion.nav>
+          </motion.div>
         )}
       </AnimatePresence>
     </header>

@@ -50,27 +50,25 @@ export function Preloader() {
         Riyas<span className="text-accent">.</span>
       </div>
 
-      <div className="absolute bottom-8 right-6 md:right-10 text-xs uppercase tracking-[0.3em] text-paper-dim">
-        {String(progress).padStart(2, "0")} / 100
+      <div className="absolute bottom-8 right-6 md:right-10 text-xs uppercase tracking-[0.3em] text-paper-dim tabular-nums">
+        {progress}%
       </div>
 
-      <div className="relative flex items-baseline gap-2">
-        <span className="font-display text-[16vw] md:text-[7rem] leading-none text-paper tabular-nums">
-          {progress}
-        </span>
-        <span className="font-display text-2xl md:text-4xl text-accent">%</span>
-      </div>
-
-      <p className="relative mt-5 text-xs uppercase tracking-[0.3em] text-paper-dim text-center px-6">
-        Designing Spaces That People Remember
+      <p
+        className="font-signature relative select-none px-4 text-center text-6xl sm:text-7xl md:text-8xl lg:text-9xl"
+        style={{
+          backgroundImage: `linear-gradient(to right, var(--paper) ${progress}%, var(--line) ${progress}%)`,
+          WebkitBackgroundClip: "text",
+          backgroundClip: "text",
+          color: "transparent",
+        }}
+      >
+        Mohammed Riyas
       </p>
 
-      <div className="relative mt-8 h-px w-48 md:w-56 bg-line overflow-hidden">
-        <div
-          className="h-full bg-accent transition-[width] duration-150 ease-linear"
-          style={{ width: `${progress}%` }}
-        />
-      </div>
+      <p className="relative mt-6 text-xs uppercase tracking-[0.3em] text-paper-dim text-center px-6">
+        Designing Spaces That People Remember
+      </p>
     </motion.div>
   );
 }

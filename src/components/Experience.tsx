@@ -51,9 +51,6 @@ export function Experience() {
                         {item.role} &middot;{" "}
                         <span className="text-paper-dim">{item.org}</span>
                       </h3>
-                      <p className="mt-2 max-w-xl text-paper-dim">
-                        {item.description}
-                      </p>
                     </div>
                   </div>
                 </div>

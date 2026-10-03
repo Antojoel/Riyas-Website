@@ -6,9 +6,9 @@
   --paper: #f3ede2;
   --paper-dim: #a89e8f;
   --line: #2a2622;
-  --accent: #c1291f;
-  --accent-soft: #e0473a;
-  --accent-deep: #5c0f0a;
+  --accent: #e2000f;
+  --accent-soft: #ff4d4d;
+  --accent-deep: #4d0006;
 }
 
 @theme inline {
@@ -30,12 +30,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   background: var(--ink);
   color: var(--paper);
   font-family: var(--font-body), system-ui, sans-serif;
+  overflow-x: clip;
 }
 
 ::selection {
@@ -45,6 +47,10 @@ body {
 
 .font-display {
   font-family: var(--font-display), Georgia, serif;
+}
+
+.font-signature {
+  font-family: "Dr Sugiyama", cursive;
 }
 
 /* thin, warm-toned scrollbar to match the dark theme */
@@ -62,14 +68,20 @@ body {
   background: var(--accent);
 }
 
+/* Hero name: proximity variable-font effect (see ProximityName.tsx).
+   Font-size itself is set inline (fluid, scales with name length). */
+.proximity-name {
+  font-family: var(--font-proximity), sans-serif;
+}
+
 /* Soft red bloom that tracks the cursor in the hero — no static shape,
    it only exists where the pointer is. */
 .cursor-glow {
   background: radial-gradient(
     circle,
-    rgba(224, 71, 58, 0.85) 0%,
-    rgba(193, 41, 31, 0.4) 32%,
-    rgba(193, 41, 31, 0) 68%
+    rgba(255, 77, 77, 0.85) 0%,
+    rgba(226, 0, 15, 0.4) 32%,
+    rgba(226, 0, 15, 0) 68%
   );
   mix-blend-mode: screen;
   filter: blur(6px);
@@ -79,9 +91,9 @@ body {
 .ambient-glow {
   background: radial-gradient(
     circle,
-    rgba(193, 41, 31, 0.55) 0%,
-    rgba(193, 41, 31, 0.18) 45%,
-    rgba(193, 41, 31, 0) 75%
+    rgba(226, 0, 15, 0.55) 0%,
+    rgba(226, 0, 15, 0.18) 45%,
+    rgba(226, 0, 15, 0) 75%
   );
   animation: ambient-pulse 6s ease-in-out infinite;
 }
@@ -95,4 +107,29 @@ body {
   .ambient-glow {
     animation: none;
   }
+}
+
+/* About section photo: permanent soft fade on the card's own edges so it
+   melts into the page background. Content and photo no longer overlap
+   (content is a left column, photo ends as a right-anchored block), so
+   this just softens the card's edges rather than fighting for legibility.
+   Mobile only needs the bottom fade since the photo spans full width. */
+.about-photo-fade {
+  background: linear-gradient(to top, var(--ink) 0%, transparent 30%);
+}
+@media (min-width: 768px) {
+  .about-photo-fade {
+    background:
+      linear-gradient(to right, var(--ink) 0%, color-mix(in srgb, var(--ink) 70%, transparent) 20%, transparent 55%),
+      linear-gradient(to top, var(--ink) 0%, transparent 30%);
+  }
+}
+
+/* Defensive: GSAP's pin-spacer inherits the pinned element's box at pin
+   time. If anything inside ever computes wider than the viewport's visible
+   (scrollbar-excluded) width, clip it here rather than let it push out a
+   horizontal scrollbar. */
+[class*="pin-spacer"] {
+  overflow-x: clip;
+  max-width: 100%;
 }

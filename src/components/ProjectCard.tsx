@@ -17,7 +17,7 @@ export function ProjectCard({
   return (
     <TransitionLink
       href={`/projects/${project.slug}`}
-      className={`group relative block h-full w-full overflow-hidden bg-ink-soft ${className}`}
+      className={`group relative block h-full w-full overflow-hidden rounded-2xl bg-ink-soft ${className}`}
     >
       <motion.div
         initial={{ clipPath: "inset(14% 0 14% 0)", opacity: 0 }}
@@ -28,7 +28,7 @@ export function ProjectCard({
       >
         <motion.div
           whileHover={{ scale: 1.08 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ type: "spring", stiffness: 300, damping: 15, mass: 0.5 }}
           className="absolute inset-0"
         >
           <Image
@@ -41,7 +41,6 @@ export function ProjectCard({
         </motion.div>
 
         <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/20 to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-95" />
-        <div className="absolute inset-0 bg-accent/0 transition-colors duration-500 group-hover:bg-accent/10" />
 
         <span className="absolute top-4 left-4 font-display text-sm text-paper-dim">
           {String(index).padStart(2, "0")}

@@ -1,15 +1,17 @@
-// PLACEHOLDER CONTENT — everything here is a stand-in copy/detail so the
-// site could be built before real copy was ready. Swap these values out
-// for Riyas's real bio, numbers, timeline and contact details.
+// Content sourced from Riyas's CV (2026-10-01) plus a few explicit
+// client-provided numbers. Still open: a short tagline/hero direction,
+// confirmed cover image per project, and whether to surface Certification /
+// Key Strengths / Languages / Interests from the CV as their own sections.
 
 export const profile = {
   name: "Riyas",
-  fullTitle: "Riyas — Architect",
-  role: "Principal Architect",
-  location: "Kerala, India", // PLACEHOLDER — confirm city/state
+  fullName: "Mohammed Riyas M",
+  fullTitle: "Mohammed Riyas M — Architect",
+  role: "Architect",
+  location: "Chennai, India", // inferred from current role (AK Architects, Chennai)
   tagline: "Architecture shaped by light, material and quiet detail.",
   philosophy:
-    "I design homes, restaurants and workspaces that feel inevitable in their setting — built around natural light, honest materials and the way people actually move through a space. Every project starts with the site and the client's life, not a style. [PLACEHOLDER — replace with Riyas's real philosophy / studio statement.]",
+    "I am highly motivated and passionate about designing spaces that people remember over time, with strong expertise in 3D visualization. Through this portfolio, I aim to present my approach as an architectural designer who values clarity, balance, and meaning in every project.",
   portrait: "/img/riyas-portrait.webp",
   portraitWidth: 894,
   portraitHeight: 1118,
@@ -48,53 +50,35 @@ export const services = [
 
 export const education = [
   {
-    year: "[Year] — Present",
-    school: "[University / College Name]", // PLACEHOLDER
-    degree: "Bachelor of Architecture",
+    year: "2020 – 2025",
+    school: "Karpagam Academy of Higher Education, Coimbatore",
+    degree: "Bachelor of Architecture (B.Arch)",
   },
-];
-
-export const skills = [
-  "AutoCAD",
-  "SketchUp",
-  "Lumion",
-  "V-Ray",
-  "Revit",
-  "Photoshop",
 ];
 
 export const experience = [
   {
-    year: "2023 — Present",
-    role: "Principal Architect",
-    org: "[Studio Name]", // PLACEHOLDER
-    description:
-      "Leading residential, hospitality and commercial projects end-to-end, from concept design through construction drawings.",
+    year: "2025 – 2026 · 1 Year",
+    role: "Junior Architect",
+    org: "AK Architects, Chennai",
   },
   {
-    year: "2020 — 2023",
-    role: "Architect",
-    org: "[Previous Firm]", // PLACEHOLDER
-    description:
-      "Worked across residential and commercial design, focusing on planning and 3D visualization.",
+    year: "2023",
+    role: "Freelancer",
+    org: "General Design Studio, Sankarankovil",
   },
   {
-    year: "[Year] — [Year]",
-    role: "[Role]",
-    org: "[Firm / Education]", // PLACEHOLDER
-    description: "[PLACEHOLDER — add earlier experience or education here.]",
+    year: "2023 · 6 Months",
+    role: "Architectural Intern",
+    org: "EBA Atelier, Bangalore",
   },
 ];
 
 export const contact = {
-  email: "hello@riyas.studio", // PLACEHOLDER
-  phone: "+91 00000 00000", // PLACEHOLDER
-  location: "Kerala, India", // PLACEHOLDER
-  socials: [
-    { label: "Instagram", href: "#" },
-    { label: "LinkedIn", href: "#" },
-    { label: "Behance", href: "#" },
-  ],
+  email: "armohammedriyasm@gmail.com",
+  phone: "+91 88700 37109",
+  location: "Chennai, India",
+  socials: [{ label: "Instagram", href: "https://instagram.com/iam_riyaslio.onpaper" }],
 };
 
 export const nav = [
