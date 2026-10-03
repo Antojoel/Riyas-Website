@@ -11,7 +11,7 @@ export function Experience() {
     <section id="experience" className="bg-ink py-28 md:py-36">
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <Reveal>
-          <EyebrowLabel index="04">Experience</EyebrowLabel>
+          <EyebrowLabel index="03">Experience</EyebrowLabel>
         </Reveal>
 
         <div className="relative mt-16">

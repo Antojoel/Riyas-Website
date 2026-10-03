@@ -7,7 +7,7 @@ export function Contact() {
     <section id="contact" className="bg-ink-soft py-28 md:py-36 border-t border-line">
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <Reveal>
-          <EyebrowLabel index="05">Contact</EyebrowLabel>
+          <EyebrowLabel index="04">Contact</EyebrowLabel>
         </Reveal>
 
         <Reveal delay={0.1}>
@@ -62,7 +62,20 @@ export function Contact() {
           <span>
             &copy; {new Date().getFullYear()} {profile.name}. All rights reserved.
           </span>
-          <span>Design &amp; Architecture Portfolio</span>
+          <span className="flex flex-col gap-1 sm:items-end">
+            <span>Design &amp; Architecture Portfolio</span>
+            <span>
+              Built by{" "}
+              <a
+                href="https://zenanvibe.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-paper transition-colors hover:text-accent"
+              >
+                Zenanvibe
+              </a>
+            </span>
+          </span>
         </div>
       </div>
     </section>

@@ -25,29 +25,6 @@ export const stats = [
   { label: "Cities Worked In", value: "3+" },
 ];
 
-export const services = [
-  {
-    title: "Residential Architecture",
-    description:
-      "Private homes and apartments designed around light, privacy and the rhythms of daily life.",
-  },
-  {
-    title: "Hospitality & Restaurant Design",
-    description:
-      "Restaurants and rooftop dining spaces where atmosphere, flow and material work together.",
-  },
-  {
-    title: "Commercial & Office Interiors",
-    description:
-      "Workspaces planned for clarity and calm, from layout through finish detailing.",
-  },
-  {
-    title: "Planning, Elevation & Sections",
-    description:
-      "Detailed floor plans, elevations and sections that carry a project from concept to construction.",
-  },
-];
-
 export const education = [
   {
     year: "2020 – 2025",
@@ -84,7 +61,6 @@ export const contact = {
 export const nav = [
   { label: "Work", href: "#work" },
   { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
   { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
