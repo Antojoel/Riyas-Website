@@ -108,12 +108,14 @@ export function Preloader() {
           Mohammed Riyas
         </p>
 
-        {/* bottom-right, right-anchored with a fixed-width number box so it
-            never shifts as digits change */}
+        {/* 1–100 counter — commented out for now; restore to bring it back.
+            Bottom-right, right-anchored with a fixed-width number box so it
+            never shifts as digits change.
         <div className="font-gothic absolute bottom-5 right-6 flex items-baseline justify-end leading-none tabular-nums text-paper md:bottom-7 md:right-10">
           <span className="min-w-[3ch] text-right text-7xl md:text-9xl">{progress}</span>
           <span className="ml-1 text-3xl text-paper-dim md:text-5xl">%</span>
         </div>
+        */}
       </motion.div>
     </div>
   );
