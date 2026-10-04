@@ -182,7 +182,7 @@ export function About() {
           ref={titleRef}
           className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center"
         >
-          <h2 className="font-display text-4xl font-bold uppercase tracking-[0.2em] text-paper md:text-6xl">
+          <h2 className="font-display text-5xl font-semibold text-paper md:text-7xl">
             About Me
           </h2>
         </div>
@@ -217,7 +217,7 @@ export function About() {
               <p className="text-xs uppercase tracking-widest text-paper-dim">
                 Hello, I am
               </p>
-              <p className="font-body text-3xl font-bold tracking-tight text-paper md:text-5xl">
+              <p className="font-display text-3xl font-semibold text-paper md:text-5xl">
                 {profile.fullName}
               </p>
             </div>
@@ -227,7 +227,7 @@ export function About() {
                 revealRefs.current[2] = el;
               }}
             >
-              <h3 className="mb-3 font-body text-2xl font-bold text-paper">About Me</h3>
+              <h3 className="mb-3 font-display text-2xl font-semibold text-paper">About Me</h3>
               <p className="max-w-lg leading-relaxed text-paper-dim">
                 {profile.philosophy}
               </p>
@@ -238,7 +238,7 @@ export function About() {
                 revealRefs.current[3] = el;
               }}
             >
-              <h3 className="mb-3 font-body text-2xl font-bold text-paper">Education</h3>
+              <h3 className="mb-3 font-display text-2xl font-semibold text-paper">Education</h3>
               <ul className="space-y-1">
                 {education.map((e) => (
                   <li key={e.school} className="text-paper-dim">
@@ -254,7 +254,7 @@ export function About() {
                 revealRefs.current[4] = el;
               }}
             >
-              <h3 className="mb-3 font-body text-2xl font-bold text-paper">
+              <h3 className="mb-3 font-display text-2xl font-semibold text-paper">
                 Tools &amp; Skills
               </h3>
               <div className="flex flex-wrap gap-2.5">
