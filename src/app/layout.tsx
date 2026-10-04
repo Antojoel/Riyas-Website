@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter, Roboto_Flex } from "next/font/google";
+import { Fraunces, Inter, Questrial, Roboto_Flex } from "next/font/google";
 import { Preloader } from "@/components/Preloader";
 import { TransitionProvider } from "@/components/PageTransition";
 import "./globals.css";
@@ -13,6 +13,14 @@ const fraunces = Fraunces({
 const inter = Inter({
   variable: "--font-body",
   subsets: ["latin"],
+});
+
+// Free Century Gothic lookalike — the loader counter asks for the real
+// Century Gothic first (a system font, can't be shipped) and falls back here.
+const questrial = Questrial({
+  variable: "--font-gothic",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 // Variable font for the hero's proximity name effect. wght (100–1000) is
@@ -34,7 +42,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${inter.variable} ${robotoFlex.variable} h-full antialiased`}
+      className={`${fraunces.variable} ${inter.variable} ${robotoFlex.variable} ${questrial.variable} h-full antialiased`}
     >
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />

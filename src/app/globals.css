@@ -49,6 +49,10 @@ body {
   font-family: var(--font-display), Georgia, serif;
 }
 
+.font-gothic {
+  font-family: "Century Gothic", CenturyGothic, var(--font-gothic), "Avant Garde", sans-serif;
+}
+
 .font-signature {
   font-family: "Dr Sugiyama", cursive;
 }

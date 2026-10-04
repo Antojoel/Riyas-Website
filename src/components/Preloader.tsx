@@ -67,7 +67,7 @@ export function Preloader() {
 
       {/* counter takes the tagline's old spot under the name; the number box
           has a fixed width so the group never shifts as digits change */}
-      <div className="font-signature relative mt-8 flex items-baseline justify-center leading-none text-paper md:mt-10">
+      <div className="font-gothic relative mt-8 flex items-baseline justify-center leading-none tabular-nums text-paper md:mt-10">
         <span className="min-w-[3ch] text-center text-7xl md:text-9xl">{progress}</span>
         <span className="ml-1 text-3xl text-paper-dim md:text-5xl">%</span>
       </div>
