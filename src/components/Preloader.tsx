@@ -90,7 +90,7 @@ export function Preloader() {
         {/* the plan draws itself behind the name */}
         <PlanDrawing
           progress={progress}
-          className="pointer-events-none absolute left-1/2 top-1/2 w-[min(92vw,980px)] -translate-x-1/2 -translate-y-[52%]"
+          className="pointer-events-none absolute left-1/2 top-1/2 w-[min(92vw,980px)] -translate-x-1/2 -translate-y-1/2"
         />
 
         {/* background-clip:text only paints inside the element's box, and the
@@ -108,10 +108,10 @@ export function Preloader() {
           Mohammed Riyas
         </p>
 
-        {/* counter takes the tagline's old spot under the name; the number box
-            has a fixed width so the group never shifts as digits change */}
-        <div className="font-gothic relative mt-8 flex items-baseline justify-center leading-none tabular-nums text-paper md:mt-10">
-          <span className="min-w-[3ch] text-center text-7xl md:text-9xl">{progress}</span>
+        {/* bottom-right, right-anchored with a fixed-width number box so it
+            never shifts as digits change */}
+        <div className="font-gothic absolute bottom-5 right-6 flex items-baseline justify-end leading-none tabular-nums text-paper md:bottom-7 md:right-10">
+          <span className="min-w-[3ch] text-right text-7xl md:text-9xl">{progress}</span>
           <span className="ml-1 text-3xl text-paper-dim md:text-5xl">%</span>
         </div>
       </motion.div>
