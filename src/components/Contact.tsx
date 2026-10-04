@@ -1,3 +1,4 @@
+import { SiInstagram } from "react-icons/si";
 import { contact, profile } from "@/data/site-content";
 import { EyebrowLabel } from "./EyebrowLabel";
 import { Reveal } from "./Reveal";
@@ -39,14 +40,24 @@ export function Contact() {
         </Reveal>
 
         <Reveal delay={0.3}>
-          <div className="mt-14 flex flex-wrap gap-6">
+          <div className="mt-14 flex flex-wrap gap-4">
             {contact.socials.map((s) => (
               <a
                 key={s.label}
                 href={s.href}
-                className="text-sm uppercase tracking-widest text-paper-dim hover:text-accent transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${s.label} (opens in a new tab)`}
+                className="group inline-flex min-h-12 items-center gap-3 rounded-full border border-line bg-white/[0.03] px-6 py-3 text-sm uppercase tracking-widest text-paper transition-all duration-300 hover:-translate-y-0.5 hover:border-accent hover:bg-accent/10 hover:shadow-[0_0_24px_rgba(226,0,15,0.25)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent active:translate-y-0 active:scale-[0.98]"
               >
+                <SiInstagram className="h-5 w-5 shrink-0 text-paper-dim transition-colors group-hover:text-accent" />
                 {s.label}
+                <span
+                  aria-hidden
+                  className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-1"
+                >
+                  &#8599;
+                </span>
               </a>
             ))}
           </div>
