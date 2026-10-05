@@ -40,6 +40,21 @@ body {
   overflow-x: clip;
 }
 
+/* Brand-red cursors (light outline keeps them visible on both the dark
+   page and the red accents). Arrow hotspot = tip; hand hotspot = fingertip. */
+html,
+body {
+  cursor: url("data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2732%27%20height=%2732%27%20viewBox=%270%200%2032%2032%27%3E%3Cpath%20d=%27M5%203%20L5%2024.500%20L10.500%2019.500%20L14.300%2028.500%20L18%2027%20L14.200%2018.200%20L21.800%2018.200%20Z%27%20fill=%27%23e2000f%27%20stroke=%27%23f3ede2%27%20stroke-width=%271.600%27%20stroke-linejoin=%27round%27/%3E%3C/svg%3E") 5 3, auto;
+}
+a,
+button,
+[role="button"],
+summary,
+label[for],
+select {
+  cursor: url("data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2732%27%20height=%2732%27%20viewBox=%270%200%2032%2032%27%3E%3Cpath%20d=%27M11.500%205%20c0-1.400%201-2.500%202.300-2.500%20s2.300%201.100%202.300%202.500%20V13%20c.4-.4%201-.6%201.600-.6%201.200%200%202.100.7%202.400%201.700%20.4-.3.9-.5%201.500-.5%201.200%200%202.200.8%202.500%201.900%20.3-.2.7-.3%201.100-.3%201.400%200%202.400%201.100%202.400%202.600%20V23%20c0%203.600-2.800%206.500-6.400%206.500%20h-3.200%20c-2.800%200-4.500-1.200-5.900-3.200%20L6.600%2021.700%20c-.6-.9-.4-2.100.5-2.700%20.9-.6%202-.4%202.700.4%20L11.500%2021.500%20Z%27%20fill=%27%23e2000f%27%20stroke=%27%23f3ede2%27%20stroke-width=%271.500%27%20stroke-linejoin=%27round%27/%3E%3C/svg%3E") 13 3, pointer;
+}
+
 ::selection {
   background: var(--accent);
   color: var(--ink);
