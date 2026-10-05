@@ -57,19 +57,27 @@ body {
   font-family: "Dr Sugiyama", cursive;
 }
 
-/* thin, warm-toned scrollbar to match the dark theme */
+/* only the thumb (the short bar) is red, in every state; track stays dark */
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 ::-webkit-scrollbar-track {
   background: var(--ink);
 }
-::-webkit-scrollbar-thumb {
-  background: var(--line);
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background: var(--accent);
   border-radius: 999px;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent);
+/* Firefox has no ::-webkit-scrollbar; applying this elsewhere would turn
+   the custom WebKit/Blink styling above off. */
+@supports not selector(::-webkit-scrollbar) {
+  html {
+    scrollbar-color: var(--accent) var(--ink);
+    scrollbar-width: thin;
+  }
 }
 
 /* Hero name: proximity variable-font effect (see ProximityName.tsx).
